@@ -4,10 +4,11 @@ import { App } from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { NotFound } from "./pages/NotFound/NotFound.tsx";
+import { Homepage } from "./pages/Homepage/Homepage.tsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <NotFound /> },
-  { path: "/", element: <App />, errorElement: <NotFound /> },
+  { path: "/home", element: <Homepage />, errorElement: <NotFound /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
