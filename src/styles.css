@@ -1,0 +1,13 @@
+html, body{
+    height: 100%
+}
+
+body{
+    background: linear-gradient(180deg, rgba(15,31,27,1) 0%, rgba(19,39,41,1) 50%, rgba(17,28,37,1) 100%);
+    background-attachment: fixed;
+    color: white;
+}
+
+.bg-navbar-gradient {
+    background: linear-gradient(180deg, rgba(15,31,27,1) 0%, rgba(15,31,27,1) 49%, rgba(17,28,37,0) 100%);
+  }

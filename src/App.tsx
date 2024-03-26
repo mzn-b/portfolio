@@ -1,10 +1,20 @@
-import { Stack, Typography } from "@mui/material";
+import { FC, useState } from "react";
+import { Homepage } from "./pages/Homepage/Homepage";
+import { Layout } from "./layout/Layout";
 
 export const App = () => {
+  const [activePage, setActivePage] = useState<number>(1);
+
   return (
-    <Stack>
-      <Typography variant="h1">Hello</Typography>
-      <Typography>Welcome</Typography>
-    </Stack>
+    <Layout setActivePage={setActivePage}>
+      <InnerApp activePage={activePage} />
+    </Layout>
   );
+};
+
+const InnerApp: FC<{ activePage: number }> = ({ activePage }) => {
+  if (activePage === 1) {
+    return <Homepage />;
+  }
+  return null;
 };
