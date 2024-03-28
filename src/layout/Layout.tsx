@@ -1,4 +1,4 @@
-import { FC} from "react";
+import { FC } from "react";
 
 interface LayoutProps {
   setActivePage: React.Dispatch<React.SetStateAction<number>>;
@@ -9,7 +9,7 @@ export const Layout: FC<LayoutProps> = ({ setActivePage, children }) => {
   return (
     <>
       <Navbar setActivePage={setActivePage} />
-      <div className="pt-16">{children}</div>
+      {children}
     </>
   );
 };
@@ -20,7 +20,7 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
   return (
-    <nav className={`py-4 bg-navbar-gradient fixed top-0 left-0 w-full z-50`}>
+    <nav className={`py-4 bg-gradient-to-b from-emerald-950 to-transparent fixed top-0 left-0 w-full z-50`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center">
           <div className="flex space-x-4">
@@ -38,7 +38,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              About
+              About Me
             </a>
             <a
               onClick={() => {
@@ -46,7 +46,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              Services
+              Portfolio
             </a>
             <a
               onClick={() => {
@@ -54,7 +54,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              Contact
+              CV
             </a>
           </div>
         </div>
