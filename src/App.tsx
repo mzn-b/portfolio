@@ -4,14 +4,18 @@ import { Layout } from "./layout/Layout";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { CV } from "./pages/CV/CV";
+import { Background } from "./Background";
 
 export const App = () => {
   const [activePage, setActivePage] = useState<number>(1);
 
   return (
-    <Layout setActivePage={setActivePage}>
-      <InnerApp activePage={activePage} />
-    </Layout>
+    <>
+      <Background />
+      <Layout setActivePage={setActivePage}>
+        <InnerApp activePage={activePage} />
+      </Layout>
+    </>
   );
 };
 

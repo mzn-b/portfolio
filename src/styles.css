@@ -10,9 +10,8 @@ body {
 }
 
 .rakkas-regular {
-    font-family: "Rakkas", serif;
-    font-weight: 400;
-    font-style: normal;
-    opacity: 0.5;
-  }
-  
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.5;
+}
