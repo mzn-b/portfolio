@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { type ISourceOptions } from "@tsparticles/engine";
+import { ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-export const Background: React.FC = () => {
+export const Background: React.FC<{ backgroundInactive?: boolean }> = ({
+  backgroundInactive,
+}) => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ export const Background: React.FC = () => {
         },
         links: {
           color: "#ffffff",
-          distance: 140,
+          distance: 150,
           enable: true,
           opacity: 0.5,
           width: 1,
@@ -44,7 +46,7 @@ export const Background: React.FC = () => {
           density: {
             enable: true,
           },
-          value: 120,
+          value: 100,
         },
         opacity: {
           value: 0.5,
@@ -57,12 +59,11 @@ export const Background: React.FC = () => {
         },
       },
       detectRetina: true,
-      zLayers: 1,
     }),
     [],
   );
 
-  if (init) {
+  if (init && !!!backgroundInactive) {
     return <Particles id="tsparticles" options={options} />;
   }
 

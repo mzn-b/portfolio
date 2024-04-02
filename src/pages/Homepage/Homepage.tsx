@@ -2,7 +2,7 @@ export const Homepage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="relative">
-        <h1 className="text-center text-emerald-400 rakkas-regular text-[7em] sm:text-[12em]  md:text-[15em]  lg:text-[18em] xl:text-[18em] drop-shadow-[0_40px_40px_rgba(110,231,183,0.3)]">
+        <h1 className="text-center text-emerald-400 rakkas-regular text-[7em] sm:text-[12em]  md:text-[15em]  lg:text-[18em] xl:text-[18em]">
           مازن
           <br />
           الشعراوي
