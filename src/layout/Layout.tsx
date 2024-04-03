@@ -73,6 +73,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
             </a>
             <a
               onClick={() => {
+                window.scrollTo(0, 0);
                 setActivePage(2);
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
@@ -81,11 +82,12 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
             </a>
             <a
               onClick={() => {
+                window.scrollTo(0, 0);
                 setActivePage(3);
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              {t("navbar.portfolio")}
+              {t("navbar.projects")}
             </a>
             <a
               onClick={() => {

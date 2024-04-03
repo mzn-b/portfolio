@@ -2,10 +2,37 @@
   "navbar": {
     "home": "Home",
     "about-me": "About Me",
-    "portfolio": "Portfolio",
+    "projects": "Projects",
     "cv": "CV"
   },
   "home": {
     "engineer": "Software Engineer"
+  },
+  "about-me": {
+    "general-info": {
+      "title": "General Information",
+      "name": "Name and Title",
+      "age": "Age"
+    },
+    "career": {
+      "title": "Career"
+    },
+    "education": {
+      "title": "Education"
+    }
+  },
+  "projects": {
+    "portfolio": {
+      "title": "Portfolio"
+    },
+    "chess": {
+      "title": "Chess"
+    },
+    "excelsio": {
+      "title": "Excelsio"
+    },
+    "dungeon-demo": {
+      "title": "Dungeon Demo"
+    }
   }
 }

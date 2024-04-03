@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { Item } from "../../../components/Item";
+import { translate } from "../../../util/translate";
+
+const TRANSLATION_PREFIX = "about-me.general-info.";
 
 const calculateAgeInYears = (): number => {
   const currentDate = new Date();
@@ -17,12 +21,18 @@ const calculateAgeInYears = (): number => {
 };
 
 export const GeneralInfo = () => {
+  const { t } = useTranslation();
   const age = calculateAgeInYears();
+
+  const handleTranslate = (toTranslate: string) => {
+    return translate(t, TRANSLATION_PREFIX, toTranslate);
+  };
+
   return (
     <div>
-      <h1>General Information</h1>
-      <Item title="Name">Mazen El-shaarawi</Item>
-      <Item title="Age">{age}</Item>
+      <h1>{handleTranslate("title")}</h1>
+      <Item title={handleTranslate("name")}>BSc Mazen El-shaarawi</Item>
+      <Item title={handleTranslate("age")}>{age}</Item>
     </div>
   );
 };

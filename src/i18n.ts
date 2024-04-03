@@ -10,11 +10,10 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  fallbackLng: "en",
+  lng: 'en',
   interpolation: {
     escapeValue: false,
   },
-  parseMissingKeyHandler: () => "",
 });
 
 export default i18n;

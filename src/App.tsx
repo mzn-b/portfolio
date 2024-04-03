@@ -2,11 +2,11 @@ import { FC, useEffect, useState } from "react";
 import { Homepage } from "./pages/Homepage/Homepage";
 import { Layout } from "./layout/Layout";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
-import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { Background } from "./Background";
 import { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { Spinner } from "./components/Spinner";
+import { Projects } from "./pages/Projects/Projects";
 
 export const App = () => {
   const [activePage, setActivePage] = useState<number>(1);
@@ -42,7 +42,7 @@ const InnerApp: FC<{ activePage: number }> = ({ activePage }) => {
     return <AboutMe />;
   }
   if (activePage === 3) {
-    return <Portfolio />;
+    return <Projects />;
   }
   return null;
 };
