@@ -3,7 +3,6 @@ import { Homepage } from "./pages/Homepage/Homepage";
 import { Layout } from "./layout/Layout";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
-import { CV } from "./pages/CV/CV";
 import { Background } from "./Background";
 
 export const App = () => {
@@ -28,9 +27,6 @@ const InnerApp: FC<{ activePage: number }> = ({ activePage }) => {
   }
   if (activePage === 3) {
     return <Portfolio />;
-  }
-  if (activePage === 4) {
-    return <CV />;
   }
   return null;
 };

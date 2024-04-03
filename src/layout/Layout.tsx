@@ -19,8 +19,24 @@ interface NavbarProps {
 }
 
 const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
+  const handleDownload = () => {
+    const pdfUrl = "CV.pdf";
+
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "CV.pdf");
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
+
   return (
-    <nav className={`py-4 bg-gradient-to-b from-emerald-950 to-transparent fixed top-0 left-0 w-full z-50`}>
+    <nav
+      className={`py-4 bg-gradient-to-b from-emerald-950 to-transparent fixed top-0 left-0 w-full z-50`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center">
           <div className="flex space-x-4">
@@ -50,7 +66,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
             </a>
             <a
               onClick={() => {
-                setActivePage(4);
+                handleDownload();
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >

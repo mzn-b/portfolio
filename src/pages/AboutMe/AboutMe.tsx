@@ -1,20 +1,31 @@
-import { Section } from "../../components/Section";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { Section } from "../../components/Section";
+import { GeneralInfo } from "./Sections/GeneralInfo";
+import { Education } from "./Sections/Education";
+import { Career } from "./Sections/Career";
 
 export const AboutMe = () => {
   return (
     <ParallaxProvider>
-      <div className="App">
-        <Section speed={10} backgroundColor="bg-red-500">
-          Section 1
+      <div className="grid grid-cols-2">
+        <Section>
+          <img src="terminal-icon.png" />
         </Section>
-        <Section speed={20} backgroundColor="bg-blue-500">
-          Section 2
+        <Section>
+          <GeneralInfo />
         </Section>
-        <Section speed={-110} backgroundColor="bg-green-500">
-          Section 3
+        <Section>
+          <Education />
         </Section>
-        {/* Add more sections as needed */}
+        <Section>
+          <img src="terminal-icon.png" />
+        </Section>
+        <Section>
+          <img src="terminal-icon.png" />
+        </Section>
+        <Section>
+          <Career />
+        </Section>
       </div>
     </ParallaxProvider>
   );
