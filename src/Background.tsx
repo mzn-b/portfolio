@@ -1,21 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useMemo } from "react";
+import Particles from "@tsparticles/react";
 import { ISourceOptions } from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim";
 
-export const Background: React.FC<{ backgroundInactive?: boolean }> = ({
-  backgroundInactive,
-}) => {
-  const [init, setInit] = useState(false);
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
-
+export const Background: React.FC<{
+  init: boolean;
+}> = ({ init }) => {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
@@ -63,7 +52,7 @@ export const Background: React.FC<{ backgroundInactive?: boolean }> = ({
     [],
   );
 
-  if (init && !!!backgroundInactive) {
+  if (init) {
     return <Particles id="tsparticles" options={options} />;
   }
 
