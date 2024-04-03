@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { FC, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface LayoutProps {
   setActivePage: React.Dispatch<React.SetStateAction<number>>;
@@ -33,6 +34,28 @@ const handleDownload = (pdfId: string) => {
 };
 
 const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
+  const pdfId = "1Gg4nW53rJubGKY7n2XjlKbL008ICzW-m";
+  const { i18n, t } = useTranslation();
+  const [lang, setLang] = useState<string>(
+    i18n.language === "en" ? "de" : "en",
+  );
+
+  const handleLanguageChange = () => {
+    if (lang === "en") {
+      i18n.changeLanguage("en").then(() => {
+        setLang("de");
+
+        console.log(i18n.language);
+      });
+    } else {
+      i18n.changeLanguage("de").then(() => {
+        setLang("en");
+
+        console.log(i18n.language);
+      });
+    }
+  };
+
   return (
     <nav
       className={`py-4 bg-gradient-to-b from-emerald-950 to-transparent fixed top-0 left-0 w-full z-50`}
@@ -46,7 +69,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              Home
+              {t("navbar.home")}
             </a>
             <a
               onClick={() => {
@@ -54,7 +77,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              About Me
+              {t("navbar.about-me")}
             </a>
             <a
               onClick={() => {
@@ -62,15 +85,24 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              Portfolio
+              {t("navbar.portfolio")}
             </a>
             <a
               onClick={() => {
-                handleDownload("1iU-vx97fDhSFozHNAg0WoYNb5QK4zNsN");
+                handleDownload(pdfId);
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              CV
+              {t("navbar.cv")}
+            </a>
+
+            <a
+              onClick={() => {
+                handleLanguageChange();
+              }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
+            >
+              {lang.toUpperCase()}
             </a>
           </div>
         </div>

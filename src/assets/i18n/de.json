@@ -1,11 +1,11 @@
 {
   "navbar": {
     "home": "Home",
-    "about-me": "About Me",
+    "about-me": "Über mich",
     "portfolio": "Portfolio",
     "cv": "CV"
   },
   "home": {
-    "engineer": "Software Engineer"
+    "engineer": "Software Entwickler"
   }
 }

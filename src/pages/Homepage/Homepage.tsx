@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export const Homepage = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="relative">
@@ -13,7 +16,7 @@ export const Homepage = () => {
               Mazen El-shaarawi
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest text-gray-300">
-              Software Engineer
+              {t("home.engineer")}
             </p>
           </div>
         </div>
