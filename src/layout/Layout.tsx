@@ -18,21 +18,21 @@ interface NavbarProps {
   setActivePage: React.Dispatch<React.SetStateAction<number>>;
 }
 
+const handleDownload = (pdfId: string) => {
+  const pdfUrl = `https://drive.usercontent.google.com/u/0/uc?id=${pdfId}&export=download`;
+
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.setAttribute("download", "CV.pdf");
+
+  document.body.appendChild(link);
+
+  link.click();
+
+  document.body.removeChild(link);
+};
+
 const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
-  const handleDownload = () => {
-    const pdfUrl = "CV.pdf";
-
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.setAttribute("download", "CV.pdf");
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-  };
-
   return (
     <nav
       className={`py-4 bg-gradient-to-b from-emerald-950 to-transparent fixed top-0 left-0 w-full z-50`}
@@ -66,7 +66,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
             </a>
             <a
               onClick={() => {
-                handleDownload();
+                handleDownload("1iU-vx97fDhSFozHNAg0WoYNb5QK4zNsN");
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
