@@ -8,29 +8,29 @@ import { Chess } from "./Sections/Chess";
 export const Projects = () => {
   return (
     <ParallaxProvider>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <Section>
           <img src="terminal-icon.png" />
         </Section>
-        <Section>
+        <Section rightSide>
           <Portfolio />
         </Section>
         <Section>
           <Chess />
         </Section>
-        <Section>
+        <Section rightSide>
           <img src="terminal-icon.png" />
         </Section>
         <Section>
           <img src="terminal-icon.png" />
         </Section>
-        <Section>
+        <Section rightSide>
           <DungeonDemo />
         </Section>
         <Section>
           <Excelsio />
         </Section>
-        <Section>
+        <Section rightSide>
           <img src="terminal-icon.png" />
         </Section>
       </div>

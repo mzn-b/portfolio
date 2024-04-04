@@ -11,28 +11,49 @@
   "about-me": {
     "general-info": {
       "title": "General Information",
-      "name": "Name and Title",
-      "age": "Age"
-    },
-    "career": {
-      "title": "Career"
+      "academic-title": "Title |",
+      "name": "Name |",
+      "age": "Age |",
+      "paragraph1": "Ever since I was a kid I have always had an interest in technology. My greatest passion aside from playing with friends was using the family PC. When I was 14 I went to a job fair my school and it was there that I knew I want to be a software developer. Aside from picking IT classes all throughout highschool I selftaught myself some C++ using YouTube tutorials.",
+      "paragraph2": "My hobbies include gaming, reading, DnD and graphic design. I used to sell my designs on fiverr to gain some petty cash during highschool."
     },
     "education": {
-      "title": "Education"
+      "title": "Education",
+      "uni": "University of Applied Sciences Technikum Wien",
+      "uni-paragraph1": "a",
+      "uni-paragraph2": "b",
+      "highschool": "Gymnasium Draschestraße",
+      "highschool-paragraph1": "a",
+      "highschool-paragraph2": "b"
+    },
+    "career": {
+      "title": "Career",
+      "cargo-partner": "cargo-partner",
+      "cargo-partner-paragraph1": "a",
+      "cargo-partner-paragraph2": "b",
+      "next-company": "Hopefully your company!"
     }
   },
   "projects": {
     "portfolio": {
-      "title": "Portfolio"
+      "title": "Portfolio",
+      "paragraph1": "a",
+      "paragraph2": "b"
     },
     "chess": {
-      "title": "Chess"
+      "title": "Chess",
+      "paragraph1": "a",
+      "paragraph2": "b"
     },
     "excelsio": {
-      "title": "Excelsio"
+      "title": "Excelsio",
+      "paragraph1": "a",
+      "paragraph2": "b"
     },
     "dungeon-demo": {
-      "title": "Dungeon Demo"
+      "title": "Dungeon Demo",
+      "paragraph1": "a",
+      "paragraph2": "b"
     }
   }
 }

@@ -7,23 +7,25 @@ import { Career } from "./Sections/Career";
 export const AboutMe = () => {
   return (
     <ParallaxProvider>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <Section>
-          <img src="terminal-icon.png" />
+          <img className="w-96" src="mazen.jpg" />
         </Section>
-        <Section>
+        <Section rightSide>
           <GeneralInfo />
         </Section>
         <Section>
           <Education />
         </Section>
-        <Section>
-          <img src="terminal-icon.png" />
+        <Section rightSide>
+          {/*TODO: make this change the image depending on where the user is in the scrolling*/}
+          <img className="xl:h-96" src="technikum.jpg" />
         </Section>
         <Section>
-          <img src="terminal-icon.png" />
+          {/*TODO: make this change the image depending on where the user is in the scrolling*/}
+          <img className="xl:h-96" src="cargo-partner.jpg" />
         </Section>
-        <Section>
+        <Section rightSide>
           <Career />
         </Section>
       </div>

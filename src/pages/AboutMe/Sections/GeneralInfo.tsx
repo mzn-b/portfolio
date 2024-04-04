@@ -29,10 +29,15 @@ export const GeneralInfo = () => {
   };
 
   return (
-    <div>
-      <h1>{handleTranslate("title")}</h1>
-      <Item title={handleTranslate("name")}>BSc Mazen El-shaarawi</Item>
+    <div className="pr-2 space-y-2">
+      <h1 className="text-2xl text-white pointer-events-none font-bold">
+        {handleTranslate("title")}
+      </h1>
+      <Item title={handleTranslate("academic-title")}>BSc</Item>
+      <Item title={handleTranslate("name")}>Mazen El-shaarawi</Item>
       <Item title={handleTranslate("age")}>{age}</Item>
+      <Item>{handleTranslate("paragraph1")}</Item>
+      <Item>{handleTranslate("paragraph2")}</Item>
     </div>
   );
 };
