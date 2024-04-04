@@ -1,8 +1,8 @@
 import { ParallaxProvider } from "react-scroll-parallax";
 import { Section } from "../../components/Section";
-import { GeneralInfo } from "./Sections/GeneralInfo";
-import { Education } from "./Sections/Education";
-import { Career } from "./Sections/Career";
+import { GeneralInfo } from "./sections/GeneralInfo";
+import { Education } from "./sections/Education";
+import { Career } from "./sections/Career";
 
 export const AboutMe = () => {
   return (

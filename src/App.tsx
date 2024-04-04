@@ -1,12 +1,12 @@
 import { FC, useEffect, useState } from "react";
-import { Homepage } from "./pages/Homepage/Homepage";
 import { Layout } from "./layout/Layout";
-import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Background } from "./Background";
 import { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { Spinner } from "./components/Spinner";
-import { Projects } from "./pages/Projects/Projects";
+import { AboutMe } from "./pages/about-me/AboutMe";
+import { Homepage } from "./pages/homepage/Homepage";
+import { Projects } from "./pages/projects/Projects";
 
 export const App = () => {
   const [activePage, setActivePage] = useState<number>(1);

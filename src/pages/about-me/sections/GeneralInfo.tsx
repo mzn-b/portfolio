@@ -33,7 +33,9 @@ export const GeneralInfo = () => {
       <h1 className="text-2xl text-white pointer-events-none font-bold">
         {handleTranslate("title")}
       </h1>
-      <Item title={handleTranslate("academic-title")}>BSc</Item>
+      <Item title={handleTranslate("academic-title")}>
+        Bachelor of Science in Engineering (BSc)
+      </Item>
       <Item title={handleTranslate("name")}>Mazen El-shaarawi</Item>
       <Item title={handleTranslate("age")}>{age}</Item>
       <Item>{handleTranslate("paragraph1")}</Item>

@@ -2,9 +2,9 @@ import { useTranslation } from "react-i18next";
 import { translate } from "../../../util/translate";
 import { Item } from "../../../components/Item";
 
-const TRANSLATION_PREFIX = "about-me.career.";
+const TRANSLATION_PREFIX = "about-me.education.";
 
-export const Career = () => {
+export const Education = () => {
   const { t } = useTranslation();
 
   const handleTranslate = (toTranslate: string) => {
@@ -16,9 +16,12 @@ export const Career = () => {
       <h1 className="text-2xl text-white pointer-events-none font-bold">
         {handleTranslate("title")}
       </h1>
-      <Item title={handleTranslate("cargo-partner")}></Item>
-      <Item>{handleTranslate("cargo-partner-paragraph1")}</Item>
-      <Item>{handleTranslate("cargo-partner-paragraph2")}</Item>
+      <Item title={handleTranslate("uni")}>2020 - 2023</Item>
+      <Item>{handleTranslate("uni-paragraph1")}</Item>
+      <Item>{handleTranslate("uni-paragraph2")}</Item>
+      <Item title={handleTranslate("highschool")}>2010 - 2019</Item>
+      <Item>{handleTranslate("highschool-paragraph1")}</Item>
+      <Item>{handleTranslate("highschool-paragraph2")}</Item>
     </div>
   );
 };

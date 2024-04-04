@@ -14,21 +14,21 @@
       "academic-title": "Title |",
       "name": "Name |",
       "age": "Age |",
-      "paragraph1": "Ever since I was a kid I have always had an interest in technology. My greatest passion aside from playing with friends was using the family PC. When I was 14 I went to a job fair my school and it was there that I knew I want to be a software developer. Aside from picking IT classes all throughout highschool I selftaught myself some C++ using YouTube tutorials.",
-      "paragraph2": "My hobbies include gaming, reading, DnD and graphic design. I used to sell my designs on fiverr to gain some petty cash during highschool."
+      "paragraph1": "Ever since I was a kid I have always had an interest in technology. My greatest passion aside from playing with friends was using the family PC. When I was 14 I went to a job fair with my school and it was there that I knew I want to be a software developer. Aside from picking IT classes all throughout highschool I selftaught myself some C++ using YouTube tutorials.",
+      "paragraph2": "My hobbies include gaming, reading, and graphic design. I used to sell my designs on fiverr to gain some petty cash during highschool. Now this design hobby has shifted towards frontend design."
     },
     "education": {
       "title": "Education",
-      "uni": "University of Applied Sciences Technikum Wien",
+      "uni": "University of Applied Sciences Technikum Wien |",
       "uni-paragraph1": "test",
       "uni-paragraph2": "b",
-      "highschool": "Gymnasium Draschestraße",
+      "highschool": "Gymnasium Draschestraße |",
       "highschool-paragraph1": "a",
       "highschool-paragraph2": "b"
     },
     "career": {
       "title": "Career",
-      "cargo-partner": "cargo-partner",
+      "cargo-partner": "cargo-partner |",
       "cargo-partner-paragraph1": "a",
       "cargo-partner-paragraph2": "b",
       "next-company": "Hopefully your company!"
@@ -37,23 +37,31 @@
   "projects": {
     "portfolio": {
       "title": "Portfolio",
-      "paragraph1": "a",
-      "paragraph2": "b"
+      "subtitle": "Tech Stack |",
+      "tech-stack": "Vite, React.js, Typescript, TailwindCSS",
+      "paragraph1": "The page you are on right now! The purpose of this page is to showcase myself as well as my previous projects. This page was created using vite, React.js (Typescript) and tailwindcss.",
+      "paragraph2": "Thanks to my job experience so far I am very familiar with React and Typescript, however this is my first ever tailwind project. I chose to use tailwind for two reasons. I didn't want to use material design for this page and I wanted to learn how to use tailwind."
     },
     "chess": {
       "title": "Chess",
-      "paragraph1": "a",
-      "paragraph2": "b"
+      "subtitle": "Tech Stack |",
+      "tech-stack": "Next.js, Typescript, Material UI",
+      "paragraph1": "The chess project was inspired by my father who wanted to create a chess based game. It was made using Next.js and Typescript.",
+      "paragraph2": "This was my first Next.js project which in hindsight wasn't the best framework for a client-side project. It still allowed me to learn how Next.js works and proved to be a nice experience."
     },
     "excelsio": {
       "title": "Excelsio",
-      "paragraph1": "a",
-      "paragraph2": "b"
+      "subtitle": "Tech Stack |",
+      "tech-stack": "Unity, C#",
+      "paragraph1": "Project Excelsio was created with a group of other students as part of our Agile class in uni. We had free reign over what project to create as long as we worked in an agile style.",
+      "paragraph2": "The project is a jump and run game with grappling mechanics, similar to 'A story about my uncle'."
     },
     "dungeon-demo": {
       "title": "Dungeon Demo",
-      "paragraph1": "a",
-      "paragraph2": "b"
+      "subtitle": "Tech Stack |",
+      "tech-stack": "Unity, C#",
+      "paragraph1": "The Dungeon Demo was created as the final part of my bachelor's thesis. The topic of my thesis was the definition of dungeon design guidelines in MMORPG games based on FFXIV, WoW and the opinion of their playerbase.",
+      "paragraph2": "This dungeon was designed using those guideline principles."
     }
   }
 }

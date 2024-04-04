@@ -1,9 +1,9 @@
 import { ParallaxProvider } from "react-scroll-parallax";
 import { Section } from "../../components/Section";
-import { Portfolio } from "./Sections/Portfolio";
-import { DungeonDemo } from "./Sections/DungeonDemo";
-import { Excelsio } from "./Sections/Excelsio";
-import { Chess } from "./Sections/Chess";
+import { Portfolio } from "./sections/Portfolio";
+import { DungeonDemo } from "./sections/DungeonDemo";
+import { Excelsio } from "./sections/Excelsio";
+import { Chess } from "./sections/Chess";
 
 export const Projects = () => {
   return (

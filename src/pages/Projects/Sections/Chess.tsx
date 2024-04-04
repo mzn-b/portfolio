@@ -16,6 +16,9 @@ export const Chess = () => {
       <h1 className="text-2xl text-white pointer-events-none font-bold">
         {handleTranslate("title")}
       </h1>
+      <Item title={handleTranslate("subtitle")}>
+        {handleTranslate("tech-stack")}
+      </Item>
       <Item>{handleTranslate("paragraph1")}</Item>
       <Item>{handleTranslate("paragraph2")}</Item>
     </div>

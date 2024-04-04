@@ -34,7 +34,7 @@ const handleDownload = (pdfId: string) => {
 };
 
 const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
-  const pdfId = "1Gg4nW53rJubGKY7n2XjlKbL008ICzW-m";
+  const pdfId = "1K26Un-RgEZEc5Wi_P7RpmU9Pl1l7UTn5";
   const { i18n, t } = useTranslation();
   const [lang, setLang] = useState<string>(
     i18n.language === "en" ? "de" : "en",
