@@ -1,6 +1,8 @@
-import { useTranslation } from "react-i18next";
 import { Item } from "../../../components/Item";
-import { translate } from "../../../util/translate";
+import { Link } from "../../../components/Link";
+import { Title } from "../../../components/Title";
+import { InnerSection } from "../../../components/InnerSection";
+import { useTranslate } from "../../../util/useTranslate";
 
 const TRANSLATION_PREFIX = "about-me.general-info.";
 
@@ -21,25 +23,20 @@ const calculateAgeInYears = (): number => {
 };
 
 export const GeneralInfo = () => {
-  const { t } = useTranslation();
   const age = calculateAgeInYears();
-
-  const handleTranslate = (toTranslate: string) => {
-    return translate(t, TRANSLATION_PREFIX, toTranslate);
-  };
+  const handleTranslate = useTranslate(TRANSLATION_PREFIX);
 
   return (
-    <div className="pr-2 space-y-2">
-      <h1 className="text-2xl text-white pointer-events-none font-bold">
-        {handleTranslate("title")}
-      </h1>
-      <Item title={handleTranslate("academic-title")}>
-        Bachelor of Science in Engineering (BSc)
-      </Item>
-      <Item title={handleTranslate("name")}>Mazen El-shaarawi</Item>
-      <Item title={handleTranslate("age")}>{age}</Item>
-      <Item>{handleTranslate("paragraph1")}</Item>
+    <InnerSection>
+      <Title title={handleTranslate("title")} />
+      <Item>{handleTranslate("paragraph1", { age: age })}</Item>
       <Item>{handleTranslate("paragraph2")}</Item>
-    </div>
+      <Item>{handleTranslate("paragraph3")}</Item>
+      <Link
+        url={"https://www.linkedin.com/in/mazen-el-shaarawi"}
+        displayText={"LinkedIn"}
+      />
+      <Link url={"https://github.com/mzn-b"} displayText={"GitHub"} />
+    </InnerSection>
   );
 };

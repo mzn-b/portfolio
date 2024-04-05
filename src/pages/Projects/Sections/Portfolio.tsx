@@ -1,26 +1,21 @@
-import { useTranslation } from "react-i18next";
-import { translate } from "../../../util/translate";
+import { useTranslate } from "../../../util/useTranslate";
 import { Item } from "../../../components/Item";
+import { Title } from "../../../components/Title";
+import { InnerSection } from "../../../components/InnerSection";
 
 const TRANSLATION_PREFIX = "projects.portfolio.";
 
 export const Portfolio = () => {
-  const { t } = useTranslation();
-
-  const handleTranslate = (toTranslate: string) => {
-    return translate(t, TRANSLATION_PREFIX, toTranslate);
-  };
+  const handleTranslate = useTranslate(TRANSLATION_PREFIX);
 
   return (
-    <div className="pr-2 space-y-2">
-      <h1 className="text-2xl text-white pointer-events-none font-bold">
-        {handleTranslate("title")}
-      </h1>
+    <InnerSection>
+      <Title title={handleTranslate("title")} />
       <Item title={handleTranslate("subtitle")}>
         {handleTranslate("tech-stack")}
       </Item>
       <Item>{handleTranslate("paragraph1")}</Item>
       <Item>{handleTranslate("paragraph2")}</Item>
-    </div>
+    </InnerSection>
   );
 };

@@ -2,15 +2,15 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { Section } from "../../components/Section";
 import { Portfolio } from "./sections/Portfolio";
 import { DungeonDemo } from "./sections/DungeonDemo";
-import { Excelsio } from "./sections/Excelsio";
 import { Chess } from "./sections/Chess";
+import { Exsilio } from "./sections/Exsilio";
 
 export const Projects = () => {
   return (
     <ParallaxProvider>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Section>
-          <img src="terminal-icon.png" />
+          <img className="xl:h-96" src="portfolio.png" />
         </Section>
         <Section rightSide>
           <Portfolio />
@@ -19,19 +19,19 @@ export const Projects = () => {
           <Chess />
         </Section>
         <Section rightSide>
-          <img src="terminal-icon.png" />
+          <img className="xl:h-96" src="chess.png" />
         </Section>
         <Section>
-          <img src="terminal-icon.png" />
+          <img className="xl:h-96" src="dungeon.png" />
         </Section>
         <Section rightSide>
           <DungeonDemo />
         </Section>
         <Section>
-          <Excelsio />
+          <Exsilio />
         </Section>
         <Section rightSide>
-          <img src="terminal-icon.png" />
+          <img className="xl:h-96" src="exsilio.png" />
         </Section>
       </div>
     </ParallaxProvider>

@@ -1,7 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { useTranslate } from "../../util/useTranslate";
+
+const TRANSLATION_PREFIX = "home.";
 
 export const Homepage = () => {
-  const { t } = useTranslation();
+  const handleTranslate = useTranslate(TRANSLATION_PREFIX);
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="relative">
@@ -16,7 +18,7 @@ export const Homepage = () => {
               Mazen El-shaarawi
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest text-gray-300">
-              {t("home.engineer")}
+              {handleTranslate("engineer")}
             </p>
           </div>
         </div>

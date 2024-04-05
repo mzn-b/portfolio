@@ -7,7 +7,7 @@ import { Career } from "./sections/Career";
 export const AboutMe = () => {
   return (
     <ParallaxProvider>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Section>
           <img className="w-96" src="mazen.jpg" />
         </Section>

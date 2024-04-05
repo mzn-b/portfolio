@@ -1,5 +1,9 @@
 import { FC, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useTranslate } from "../util/useTranslate";
+
+const PDF_ID = "1K26Un-RgEZEc5Wi_P7RpmU9Pl1l7UTn5";
+const TRANSLATION_PREFIX = "navbar.";
 
 interface LayoutProps {
   setActivePage: React.Dispatch<React.SetStateAction<number>>;
@@ -19,8 +23,8 @@ interface NavbarProps {
   setActivePage: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const handleDownload = (pdfId: string) => {
-  const pdfUrl = `https://drive.usercontent.google.com/u/0/uc?id=${pdfId}&export=download`;
+const handleDownload = () => {
+  const pdfUrl = `https://drive.usercontent.google.com/u/0/uc?id=${PDF_ID}&export=download`;
 
   const link = document.createElement("a");
   link.href = pdfUrl;
@@ -34,11 +38,11 @@ const handleDownload = (pdfId: string) => {
 };
 
 const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
-  const pdfId = "1K26Un-RgEZEc5Wi_P7RpmU9Pl1l7UTn5";
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
   const [lang, setLang] = useState<string>(
     i18n.language === "en" ? "de" : "en",
   );
+  const handleTranslate = useTranslate(TRANSLATION_PREFIX);
 
   const handleLanguageChange = () => {
     if (lang === "en") {
@@ -69,7 +73,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              {t("navbar.home")}
+              {handleTranslate("home")}
             </a>
             <a
               onClick={() => {
@@ -78,7 +82,7 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              {t("navbar.about-me")}
+              {handleTranslate("about-me")}
             </a>
             <a
               onClick={() => {
@@ -87,15 +91,15 @@ const Navbar: FC<NavbarProps> = ({ setActivePage }) => {
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              {t("navbar.projects")}
+              {handleTranslate("projects")}
             </a>
             <a
               onClick={() => {
-                handleDownload(pdfId);
+                handleDownload();
               }}
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-m font-medium"
             >
-              {t("navbar.cv")}
+              {handleTranslate("cv")}
             </a>
 
             <a

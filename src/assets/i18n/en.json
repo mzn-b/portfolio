@@ -14,32 +14,34 @@
       "academic-title": "Title |",
       "name": "Name |",
       "age": "Age |",
-      "paragraph1": "Ever since I was a kid I have always had an interest in technology. My greatest passion aside from playing with friends was using the family PC. When I was 14 I went to a job fair with my school and it was there that I knew I want to be a software developer. Aside from picking IT classes all throughout highschool I selftaught myself some C++ using YouTube tutorials.",
-      "paragraph2": "My hobbies include gaming, reading, and graphic design. I used to sell my designs on fiverr to gain some petty cash during highschool. Now this design hobby has shifted towards frontend design."
+      "paragraph1": "My name is Mazen El-shaarawi. I am {{age}} years old and I have the academic title 'Bachelor of Science in Engineering (BSc)' in Computer Science.",
+      "paragraph2": "Ever since I was a kid I have always had an interest in technology. My greatest passion aside from playing with friends was using the family PC. When I was 14 I went to a job fair with my school and it was there that I knew I want to be a software developer. Aside from picking IT classes all throughout highschool I taught myself some C++ using YouTube tutorials.",
+      "paragraph3": "My hobbies include gaming, reading, and graphic design. I used to sell my designs on fiverr to gain some petty cash during highschool. Now this design hobby has shifted towards frontend design."
     },
     "education": {
       "title": "Education",
       "uni": "University of Applied Sciences Technikum Wien |",
-      "uni-paragraph1": "test",
-      "uni-paragraph2": "b",
+      "uni-paragraph1": "I chose this university because of their dual student program. What this means is that for every 3 months of studying I also did 3 months of work at an intership with a partner company. This allowed me to gain practical work experience much earlier than my peers and helped me develop important skills early on.",
+      "uni-paragraph2": "I graduated in minimal time with a great success on my bachelor's thesis. Of course, my degree is in computer science.",
       "highschool": "Gymnasium Draschestraße |",
-      "highschool-paragraph1": "a",
-      "highschool-paragraph2": "b"
+      "highschool-paragraph1": "During the first 4 years of highschool I was part of what was called the Dual Language Program. From ages 10-14 I took every class in both German and English which gave me a very solid foundation for the English language.",
+      "highschool-paragraph2": "For the last 4 years I was part of the modular upper grade program which meant that I picked 3 classes to take in the afternoon each semester. I would then graduate with a specific focus depending on which classes I picked. I chose mostly IT classes and graduated with a focus in IT."
     },
     "career": {
       "title": "Career",
+      "today": "Today",
       "cargo-partner": "cargo-partner |",
-      "cargo-partner-paragraph1": "a",
-      "cargo-partner-paragraph2": "b",
-      "next-company": "Hopefully your company!"
+      "cargo-partner-paragraph1": "My first work experience at cargo-partner were my four internships during my studies. I spent 6 months doing app development, 3 months doing app management and 3 months doing PMO. After graduating I decided to stay with this company and have been working there since September 2023.",
+      "cargo-partner-paragraph2": "The tech stack we use is Java, Kotlin, Quarkus and Spring Boot for the backend as well as Typescript, React.js and Material UI for the frontend.",
+      "next-company": "Hopefully your company next!"
     }
   },
   "projects": {
     "portfolio": {
-      "title": "Portfolio",
+      "title": "Portfolio 1.0",
       "subtitle": "Tech Stack |",
       "tech-stack": "Vite, React.js, Typescript, TailwindCSS",
-      "paragraph1": "The page you are on right now! The purpose of this page is to showcase myself as well as my previous projects. This page was created using vite, React.js (Typescript) and tailwindcss.",
+      "paragraph1": "The page you are on right now! The purpose of this page is to showcase myself as well as my previous projects.",
       "paragraph2": "Thanks to my job experience so far I am very familiar with React and Typescript, however this is my first ever tailwind project. I chose to use tailwind for two reasons. I didn't want to use material design for this page and I wanted to learn how to use tailwind."
     },
     "chess": {
@@ -47,21 +49,21 @@
       "subtitle": "Tech Stack |",
       "tech-stack": "Next.js, Typescript, Material UI",
       "paragraph1": "The chess project was inspired by my father who wanted to create a chess based game. It was made using Next.js and Typescript.",
-      "paragraph2": "This was my first Next.js project which in hindsight wasn't the best framework for a client-side project. It still allowed me to learn how Next.js works and proved to be a nice experience."
-    },
-    "excelsio": {
-      "title": "Excelsio",
-      "subtitle": "Tech Stack |",
-      "tech-stack": "Unity, C#",
-      "paragraph1": "Project Excelsio was created with a group of other students as part of our Agile class in uni. We had free reign over what project to create as long as we worked in an agile style.",
-      "paragraph2": "The project is a jump and run game with grappling mechanics, similar to 'A story about my uncle'."
+      "paragraph2": "This was my first Next.js project which in hindsight wasn't the best framework for an entirely client-side project. It still allowed me to learn how Next.js works so it was a valuable learning experience."
     },
     "dungeon-demo": {
       "title": "Dungeon Demo",
       "subtitle": "Tech Stack |",
       "tech-stack": "Unity, C#",
       "paragraph1": "The Dungeon Demo was created as the final part of my bachelor's thesis. The topic of my thesis was the definition of dungeon design guidelines in MMORPG games based on FFXIV, WoW and the opinion of their playerbase.",
-      "paragraph2": "This dungeon was designed using those guideline principles."
+      "paragraph2": "This dungeon was designed using those guideline principles. The player can attack 1 enemy, multiple enemies or heal themselves. The dungeon is cleared when all 3 boss fights are completed."
+    },
+    "exsilio": {
+      "title": "Project Exsilio",
+      "subtitle": "Tech Stack |",
+      "tech-stack": "Unity, C#",
+      "paragraph1": "Project Exsilio was created with a group of other students as part of our Agile class in uni. We had free reign over what project to create as long as we worked in an agile style.",
+      "paragraph2": "The project is a jump and run game with grappling mechanics, similar to 'A story about my uncle'. It was my first time working Unity and C# and gave me my first practical insight into OOP."
     }
   }
 }

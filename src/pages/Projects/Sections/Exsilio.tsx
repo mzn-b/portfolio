@@ -3,9 +3,9 @@ import { Title } from "../../../components/Title";
 import { InnerSection } from "../../../components/InnerSection";
 import { useTranslate } from "../../../util/useTranslate";
 
-const TRANSLATION_PREFIX = "projects.dungeon-demo.";
+const TRANSLATION_PREFIX = "projects.exsilio.";
 
-export const DungeonDemo = () => {
+export const Exsilio = () => {
   const handleTranslate = useTranslate(TRANSLATION_PREFIX);
 
   return (
