@@ -3,7 +3,9 @@
     "home": "Home",
     "about-me": "About Me",
     "projects": "Projects",
-    "cv": "CV"
+    "cv": "CV",
+    "en": "English",
+    "de": "German"
   },
   "home": {
     "engineer": "Software Engineer"

@@ -3,7 +3,9 @@
     "home": "Startseite",
     "about-me": "Über mich",
     "projects": "Projekte",
-    "cv": "CV"
+    "cv": "CV",
+    "en": "Englisch",
+    "de": "Deutsch"
   },
   "home": {
     "engineer": "Softwareentwickler"
