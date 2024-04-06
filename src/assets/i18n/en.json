@@ -42,7 +42,7 @@
     "portfolio": {
       "title": "Portfolio 1.0",
       "subtitle": "Tech Stack |",
-      "tech-stack": "Vite, React.js, Typescript, TailwindCSS",
+      "tech-stack": "Vite, React.js, Typescript, TailwindCSS, GitHub Pages",
       "paragraph1": "The page you are on right now! The purpose of this page is to showcase myself as well as my previous projects.",
       "paragraph2": "Thanks to my job experience so far I am very familiar with React and Typescript, however this is my first ever tailwind project. I chose to use tailwind for two reasons. I didn't want to limit myself material design pricinples and I wanted to learn how to use tailwind."
     },
