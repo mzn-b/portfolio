@@ -15,23 +15,23 @@
       "name": "Name |",
       "age": "Alter |",
       "paragraph1": "Mein Name ist Mazen El-shaarawi. Ich bin {{age}} Jahre alt und habe den akademischen Grad 'Bachelor of Science in Engineering (BSc)' in Informatik.",
-      "paragraph2": "Schon als Kind hatte ich ein großes Interesst für Technologie. Meine größte Leidenschaft neben dem Spielen mit Freunden war die Benutzung des Familien-PCs. Als ich 14 Jahre alt war, besuchte ich mit meiner Schule eine Jobmesse. Seit diesem Moment wusste ich, dass ich Softwareentwickler werden möchte. Neben dem Besuch von IT-Kursen während meiner gesamten Schulzeit habe ich mir selbst etwas C++ mit Hilfe von YouTube-Tutorials beigebracht.",
+      "paragraph2": "Schon als Kind hatte ich ein großes Interesse für Technologie. Meine größte Leidenschaft neben dem Spielen mit Freunden war die Benutzung des Familien-PCs. Als ich 14 Jahre alt war, besuchte ich mit meiner Schule eine Jobmesse. Von dem Moment an wusste ich, dass ich Softwareentwickler werden möchte. Neben dem Besuch von IT-Kursen während meiner gesamten Schulzeit habe ich mir selbst etwas C++ mit Hilfe von YouTube-Tutorials beigebracht.",
       "paragraph3": "Meine Hobbys sind Gaming, Lesen und Grafikdesign. Während meiner Schulzeit habe ich meine Designs auf Fiverr verkauft, um etwas Taschengeld zu verdienen. Jetzt hat sich dieses Design-Hobby in Richtung Frontend-Design entwickelt."
     },
     "education": {
       "title": "Bildung",
       "uni": "Fachhochschule Technikum Wien |",
-      "uni-paragraph1": "Ich habe diese Universität wegen ihres dualen Studienprogramms gewählt. Unter einem dualen Studienprogramm versteht man, dass man alle 3 Monate des Studiums auch 3 Monate Arbeit bei einem Partnerunternehmen absolviert. Dadurch konnte ich viel früher als meine Kommilitonen praktische Arbeitserfahrung sammeln und wichtige Fähigkeiten frühzeitig entwickeln.",
-      "uni-paragraph2": "Ich habe mein Studium in minimaler Zeit mit großem Erfolg abgeschlossen. Natürlich liegt mein Abschluss in der Informatik.",
+      "uni-paragraph1": "Ich habe diese FH wegen ihres dualen Studienprogramms gewählt. Unter einem dualen Studienprogramm versteht man, dass man für alle drei Monate des Studiums auch drei Monate Arbeit bei einem Partnerunternehmen absolviert. Dadurch konnte ich viel früher als meine Kommilitonen praktische Arbeitserfahrung sammeln und wichtige Fähigkeiten frühzeitig entwickeln.",
+      "uni-paragraph2": "Ich habe mein Studium in Mindeststudienzeit mit gutem Erfolg abgeschlossen.",
       "highschool": "Gymnasium Draschestraße |",
-      "highschool-paragraph1": "In den ersten 4 Jahren der Oberschule war ich Teil des sogenannten Dual Language Program. Von 10 bis 14 Jahren habe ich alle Fächer sowohl auf Deutsch als auch auf Englisch unterrichtet bekommen, was mir eine sehr solide Grundlage für die englische Sprache verschafft hat.",
-      "highschool-paragraph2": "In den letzten 4 Jahren war ich Teil des modularisierten Oberstufenprogramms. Das System bot mir die Möglichkeit, in jedem Semester drei Module auszuwählen und meinen Schwerpunkt zu setzen. Wie erwähnt bin ich von der Informatik fasziniert und setzte dementsprechend meinen Fokus auf Informatik. Dieser Schwerpunkt ermöglichte es mir außerdem auch in Informatik zu maturieren."
+      "highschool-paragraph1": "In der Unterstufe war ich Teil des sogenannten Dual Language Program. Ich habe alle Fächer sowohl auf Deutsch als auch auf Englisch unterrichtet bekommen, was mir solide Kenntnisse in der englischen Sprache verschafft hat.",
+      "highschool-paragraph2": "In den letzten vier Jahren war ich Teil des modularisierten Oberstufenprogramms. Das System bot mir die Möglichkeit, in jedem Semester drei Module auszuwählen und meinen Schwerpunkt zu setzen. Wie erwähnt bin ich von der Informatik fasziniert und setzte dementsprechend meinen Fokus auf Informatik. Dieser Schwerpunkt ermöglichte es mir außerdem auch in Informatik zu maturieren."
     },
     "career": {
       "title": "Karriere",
       "today": "Heute",
       "cargo-partner": "cargo-partner |",
-      "cargo-partner-paragraph1": "Meine erste Berufserfahrung bei cargo-partner waren meine vier Praktika während meines Studiums. Ich habe 6 Monate lang App-Entwicklung gemacht, 3 Monate lang App-Management und 3 Monate lang PMO. Nach meinem Abschluss habe ich mich entschieden, bei diesem Unternehmen zu bleiben, und arbeite dort seit September 2023.",
+      "cargo-partner-paragraph1": "Meine erste Berufserfahrung war bei cargo-partner. Dor habe ich vier Praktika während meines Studiums abgeschlossen. Ich habe sechs Monate lang App-Entwicklung gemacht, drei Monate lang App-Management und drei Monate lang PMO. Nach meinem Abschluss habe ich mich entschieden, bei diesem Unternehmen zu bleiben, und arbeite dort seit September 2023.",
       "cargo-partner-paragraph2": "Der Technologie-Stack, den wir verwenden, umfasst Java, Kotlin, Quarkus und Spring Boot für das Backend sowie Typescript, React.js und Material UI für das Frontend.",
       "next-company": "Hoffentlich Ihr Unternehmen als Nächstes!"
     }
@@ -42,10 +42,10 @@
       "subtitle": "Tech Stack |",
       "tech-stack": "Vite, React.js, Typescript, TailwindCSS",
       "paragraph1": "Die Seite, auf der Sie sich gerade befinden! Der Zweck dieser Seite ist es, mich selbst sowie meine früheren Projekte zu präsentieren.",
-      "paragraph2": "Dank meiner bisherigen Berufserfahrung bin ich mit React und Typescript sehr vertraut, jedoch ist dies mein erstes Projekt mit Tailwind. Ich habe mich aus zwei Gründen für Tailwind entschieden. Ich wollte für diese Seite kein Materialdesign verwenden, und ich wollte lernen, wie man Tailwind verwendet."
+      "paragraph2": "Dank meiner bisherigen Berufserfahrung bin ich mit React und Typescript sehr vertraut, jedoch ist dies mein erstes Projekt mit Tailwind. Ich habe mich aus zwei Gründen für Tailwind entschieden. Ich wollte mich nicht mit Material Design Prinzipien limitieren, und ich wollte lernen, wie man Tailwind verwendet."
     },
     "chess": {
-      "title": "Schach",
+      "title": "Chess",
       "subtitle": "Tech Stack |",
       "tech-stack": "Next.js, Typescript, Material UI",
       "paragraph1": "Das Schachprojekt wurde von meinem Vater inspiriert, der ein schachbasiertes Spiel erstellen wollte. Es wurde mit Next.js und Typescript erstellt.",
@@ -56,13 +56,13 @@
       "subtitle": "Tech Stack |",
       "tech-stack": "Unity, C#",
       "paragraph1": "Die Dungeon-Demo wurde als letzter Teil meiner Bachelorarbeit erstellt. Das Thema meiner Arbeit war die Definition von Dungeon-Designrichtlinien in MMORPG-Spielen basierend auf FFXIV, WoW und der Meinung ihrer Spielerbasis.",
-      "paragraph2": "Dieser Dungeon wurde unter Verwendung dieser Richtlinienprinzipien entworfen. Der Spieler kann 1 Gegner, mehrere Gegner angreifen oder sich heilen. Der Dungeon ist abgeschlossen, wenn alle 3 Bosskämpfe abgeschlossen sind."
+      "paragraph2": "Dieser Dungeon wurde unter Verwendung dieser Richtlinienprinzipien entworfen. Der Spieler kann einen Gegner angreifen, mehrere Gegner angreifen oder sich heilen. Der Dungeon ist abgeschlossen, wenn alle 3 Bosskämpfe abgeschlossen sind."
     },
     "exsilio": {
       "title": "Project Exsilio",
       "subtitle": "Tech Stack |",
       "tech-stack": "Unity, C#",
-      "paragraph1": "Project Exsilio wurde mit einer Gruppe anderer Studenten im Rahmen unseres agilen Kurses an der Universität erstellt. Wir hatten die freie Wahl, welches Projekt wir erstellen wollten, solange wir in einem agilen Stil arbeiteten.",
+      "paragraph1": "Project Exsilio wurde mit einer Gruppe anderer Studenten im Rahmen unseres agilen Kurses an der Universität erstellt. Es war uns überlassen, welches Projekt wir erstellen wollten, solange wir nach agilen Prinzipien vorgingen.",
       "paragraph2": "Das Projekt ist ein Jump-and-Run-Spiel mit Greifmechanik, ähnlich wie 'A Story About My Uncle'. Es war das erste Mal, dass ich mit Unity und C# gearbeitet habe, und es verleihte mir erste praktische Einblicke in OOP."
     }
   }
